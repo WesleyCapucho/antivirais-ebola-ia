@@ -1,0 +1,2 @@
+Diretório: 2-MACHINE-LEARNING/2b-MODELOS_TREINADOS/2b4-Deep_Learning
+Criado automaticamente para estruturação metodológica.

@@ -1,0 +1,2 @@
+Diretório: 2-MACHINE-LEARNING/2b-MODELOS_TREINADOS/2b2-Support_Vector_Machine
+Criado automaticamente para estruturação metodológica.

@@ -1,0 +1,2 @@
+Diretório: 2-MACHINE-LEARNING/2c-VALIDACOES_CRUZADAS
+Criado automaticamente para estruturação metodológica.

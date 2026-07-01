@@ -1,0 +1,2 @@
+Diretório: 3-SCREENING-OTIMIZACAO/3c-SIMULACOES_DINAMICA_MOLECULAR/3c4_analise_md_resultados/3c4a_stability_metrics
+Criado automaticamente para estruturação metodológica.

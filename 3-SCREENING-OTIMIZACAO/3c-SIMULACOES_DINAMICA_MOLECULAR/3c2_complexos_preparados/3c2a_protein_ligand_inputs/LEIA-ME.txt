@@ -1,0 +1,2 @@
+Diretório: 3-SCREENING-OTIMIZACAO/3c-SIMULACOES_DINAMICA_MOLECULAR/3c2_complexos_preparados/3c2a_protein_ligand_inputs
+Criado automaticamente para estruturação metodológica.

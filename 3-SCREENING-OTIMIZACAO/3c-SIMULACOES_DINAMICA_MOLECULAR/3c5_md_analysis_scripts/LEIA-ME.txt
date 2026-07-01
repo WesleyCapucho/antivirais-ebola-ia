@@ -1,0 +1,2 @@
+Diretório: 3-SCREENING-OTIMIZACAO/3c-SIMULACOES_DINAMICA_MOLECULAR/3c5_md_analysis_scripts
+Criado automaticamente para estruturação metodológica.
