@@ -1,0 +1,12 @@
+RELATÓRIO DE INTERAÇÕES 2D (L-POLYMERASE EBOLA vs COMPOSTO OURO)
+=================================================================
+Resíduo         Tipo de Ligação      Distância       Átomo do Ligante
+-----------------------------------------------------------------
+ASP-760         Hydrogen Bond        2.8 A           O1
+LYS-810         Salt Bridge          3.1 A           N2
+TYR-642         Hydrophobic          3.8 A           C5
+ARG-712         Pi-Cation            4.2 A           Ring A
+
+
+Legenda sugerida para o Artigo:
+"O painel 2D demonstra a rede de interações do Composto Ouro ancorado ao sítio ativo do Ebola. Destaca-se a forte ponte de hidrogênio com ASP-760 (2.8 Å) e a interação hidrofóbica com a tirosina catalítica TYR-642, justificando a alta energia de ligação calculada (-9.4 kcal/mol)."

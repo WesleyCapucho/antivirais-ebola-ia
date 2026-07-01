@@ -1,0 +1,3 @@
+PMID,DOI,Year,EC50_uM_Clean,Toxicity_Reported_Yes_No,RoB_Score_AI,Quality_Label,Raw_NLP_Extracted
+26752302,10.1371/journal.pntd.0004364,2016,0.038,No,1,Low Quality (Review Needed),IC50 0.038 μM
+10786827,,1999,0.125,No,1,Low Quality (Review Needed),EC50 125 nM

@@ -1,0 +1,3 @@
+PMID,Study_Type,Purified_Enzyme_Used,Positive_Control_Used,Replicates_n,Dose_Response_Curve,Toxicity_Tested,RoB_Score,Quality_Label
+# Esta planilha será preenchida pelo revisor humano ou pela IA para os artigos filtrados.
+# Score de 0 a 5. Se RoB_Score < 3, o estudo é classificado como "High Risk of Bias" e excluído.
