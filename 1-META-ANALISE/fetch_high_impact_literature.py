@@ -21,7 +21,7 @@ def fetch_pubmed_literature():
     
     try:
         # Busca os IDs
-        handle = Entrez.esearch(db="pubmed", term=query, retmax=50, sort="relevance")
+        handle = Entrez.esearch(db="pubmed", term=query, retmax=1000, sort="relevance")
         record = Entrez.read(handle)
         handle.close()
         
@@ -41,7 +41,7 @@ def fetch_pubmed_literature():
         markdown_lines = []
         
         markdown_lines.append("# Literatura Curada: Ebola + Inteligência Artificial / Docking")
-        markdown_lines.append("Esta lista contém 50 artigos extraídos do **PubMed** de alta relevância.\n")
+        markdown_lines.append(f"Esta lista contém {len(id_list)} artigos extraídos do **PubMed** de alta relevância.\n")
         
         for i, article in enumerate(articles['PubmedArticle']):
             medline = article['MedlineCitation']
@@ -91,18 +91,22 @@ def fetch_pubmed_literature():
                 md_entry += f" | [DOI](https://doi.org/{doi})"
             markdown_lines.append(md_entry)
             
-        # Salvando BibTeX
-        bib_path = r"G:\Meu Drive\PROJETO-ANTIVIRAIS-NANOTECNOLOGIA-IA\5-PUBLICACOES\references_library.bib"
-        with open(bib_path, "w", encoding="utf-8") as f:
+        # Salvando BibTeX e Lista
+        # Desktop
+        desktop_dir = r"C:\Users\Wesley Capucho\Desktop\Artigo_1_Ebola_AI"
+        os.makedirs(desktop_dir, exist_ok=True)
+        
+        bib_path_desktop = os.path.join(desktop_dir, "referencias_massivas_1000.bib")
+        md_path_desktop = os.path.join(desktop_dir, "lista_literatura_1000.md")
+        
+        with open(bib_path_desktop, "w", encoding="utf-8") as f:
             f.write("\n\n".join(bibtex_entries))
             
-        # Salvando Lista Curada
-        md_path = r"G:\Meu Drive\PROJETO-ANTIVIRAIS-NANOTECNOLOGIA-IA\7-RECURSOS-EXTERNOS\LITERATURA_CURADA\Lista_Literatura_Curada.md"
-        with open(md_path, "w", encoding="utf-8") as f:
+        with open(md_path_desktop, "w", encoding="utf-8") as f:
             f.write("\n".join(markdown_lines))
             
-        print(f"[+] BibTeX gerado em: {bib_path}")
-        print(f"[+] Tabela Resumo gerada em: {md_path}")
+        print(f"[+] BibTeX gerado em: {bib_path_desktop}")
+        print(f"[+] Tabela Resumo gerada em: {md_path_desktop}")
         
     except Exception as e:
         print(f"[-] Erro ao puxar dados do PubMed: {str(e)}")
